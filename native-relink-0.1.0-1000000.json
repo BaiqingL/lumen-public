@@ -1,0 +1,25 @@
+{
+  "zip": "lumen-0.1.0-1000000-native-relink-2df59fc-issued.zip",
+  "bytes": 6958054,
+  "sha256": "63244c648b94fb20aaa2784b720ad254f127be6b00daea51d0598ee00696f1c0",
+  "members": 65,
+  "manifestInputs": 64,
+  "publisher": "Baiqing Lyu (Lumen)",
+  "issuedDate": "2026-09-08",
+  "permissionSha256": "cb696790be4ecdd58697bb7493be80ca4618d0f1625e27422a82d1a421f9ed5f",
+  "preparedArchiveSha256": "ef0e6d9569eb769e546ef2ea4ede3a97b9a9525dafbc5c6204be3c321c1f2e28",
+  "changedPreparedMembers": [
+    "README.md",
+    "manifest.json",
+    "provenance.json"
+  ],
+  "addedMembers": [
+    "relink-permission.md"
+  ],
+  "preservedPreparedMembers": 61,
+  "operativePermissionMatchesApprovedDraft": true,
+  "nativeSha256": "4ffb19a289978e51289fdc2c2ea65d5ad179bf299d37a0fc7f375e46143c0996",
+  "candidate3AppSha256": "bd7f0ea4296ec70bd2d2274cc5d1634c0d6cf218514a45adfd3b3d984188ed29",
+  "candidate3HapSha256": "10a514c8751ba4c80612b4fa0609fa50989cecb0a8be004d9b5e4f4e85e37e3f",
+  "downloadUrl": "https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.1.0-1000000/lumen-0.1.0-1000000-native-relink-2df59fc-issued.zip"
+}
