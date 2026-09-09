@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>流明隐私政策</title>
+<style>
+:root { color-scheme: light dark; font: 17px/1.7 system-ui, sans-serif; color: #29251f; background: #faf8f4; }
+body { margin: 0; }
+main { max-width: 54rem; margin: auto; padding: 2rem 1.25rem 4rem; overflow-wrap: anywhere; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+a { color: #80540f; text-underline-offset: .2em; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.2; }
+h2 { margin-top: 2.5rem; font-size: 1.45rem; line-height: 1.4; }
+h3 { margin: 0 0 .75rem; font-size: 1.05rem; line-height: 1.5; }
+p { margin: .75rem 0 1rem; }
+li { margin-bottom: 1rem; }
+ul { padding-left: 1.4rem; }
+code { font-size: .92em; }
+.data-entry { margin: 1rem 0; padding: 1.25rem; border: 1px solid #ddd5c8; border-radius: 1rem; background: #fffdf9; }
+.data-entry p:last-child { margin-bottom: 0; }
+@media (prefers-color-scheme: dark) {
+  :root { color: #eee8df; background: #171612; }
+  a { color: #e8bf70; }
+  .data-entry { background: #201e19; border-color: #4b4336; }
+}
+@media print { :root { color: #000; background: #fff; font-size: 11pt; } nav { display: none; } main { max-width: none; padding: 0; } .data-entry { break-inside: avoid; background: #fff; border-color: #ccc; } }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="语言"><a href="privacy.html" lang="en">English</a><a href="privacy-zh-CN.html" lang="zh-CN" aria-current="page">简体中文</a></nav>
+<h1>流明隐私政策</h1>
+<p>最后更新日期：2026 年 9 月 8 日。</p>
+<p>流明是一款面向 HarmonyOS 的个人影音播放器。开发者展示名称为 <strong>Lumen</strong>，支持与隐私联系邮箱为 <strong>admin@lumenapp.tv</strong>。本政策适用于包名为 <code>com.lumen.mediaplayer</code> 的应用。</p>
+<p>你可以通过系统文件选择器打开视频和字幕，也可以连接 Plex 账户以访问媒体服务器。流明不提供电影片库，也不运营媒体托管服务。联网功能会按照下文说明向 Plex 和你选择的服务器发送必要信息；本地播放不会将你选择的文件上传给流明。</p>
+<h2>流明使用的信息</h2>
+<section class="data-entry"><h3>信息: Plex 授权与账户信息</h3><p><strong>用途与接收方:</strong> Plex 在其网站上完成授权。流明联系 <code>plex.tv</code> 和 <code>clients.plex.tv</code> 以完成登录并查找可访问的服务器。流明不要求你提供 Plex 密码。账户资格响应还可能包含你的电子邮箱地址、账户标识符和展示名称等资料。流明使用其中的订阅状态检查功能资格。</p><p><strong>保存与保留方式:</strong> 账户令牌和首选服务器标识符加密保存在 HarmonyOS Asset Store 中，并禁用同步及封装导出。应用重启或更新后仍保留，直至你断开 Plex。发现的服务器地址和令牌仅保留在内存中。完整的账户资格响应仅临时保留在内存中。流明不另行保存返回的联系或个人资料字段，也不将其用于其他功能。</p></section>
+<section class="data-entry"><h3>信息: 应用与播放会话标识符</h3><p><strong>用途与接收方:</strong> Plex 和所选媒体服务器会收到随机生成的客户端标识符、会话标识符、应用名称和版本、平台及设备标签。网络接收方也会收到 IP 地址等连接信息。这些信息用于识别客户端并支持请求与播放。</p><p><strong>保存与保留方式:</strong> 客户端标识符保存在应用偏好设置中，断开 Plex 后仍保留。播放会话标识符仅保留在内存中。流明不使用广告标识符或硬件标识符。</p></section>
+<section class="data-entry"><h3>信息: 媒体请求与播放活动</h3><p><strong>用途与接收方:</strong> 所选服务器会收到影音库信息、视频、海报、字幕及下载请求，以及播放选择与进度。进度包括媒体条目标识符、播放位置、时长和播放、暂停、停止或缓冲状态。相关功能还会向 Plex 查询账户资格。</p><p><strong>保存与保留方式:</strong> 当前请求与播放状态保留在内存中。Plex 及服务器运营方决定其系统内记录的保留方式。</p></section>
+<section class="data-entry"><h3>信息: 影音库搜索文字</h3><p><strong>用途与接收方:</strong> 流明在设备上筛选已经加载的影音库条目，不会将搜索文字发送给 Plex、媒体服务器或流明服务。</p><p><strong>保存与保留方式:</strong> 仅供当前界面使用；流明不保存搜索历史记录。</p></section>
+<section class="data-entry"><h3>信息: 缓存的海报、字幕及影音库展示信息</h3><p><strong>用途与接收方:</strong> 本地缓存用于减少重复请求，可能包含媒体名称和观看进度。</p><p><strong>保存与保留方式:</strong> 保存在应用私有缓存目录中，按有效期和容量限制清理。海报默认上限为 256 MiB，文本默认上限为 32 MiB。“清除缓存”会删除这些条目。流明不对其内容额外加密。</p></section>
+<section class="data-entry"><h3>信息: 已下载的媒体及下载目录信息</h3><p><strong>用途与接收方:</strong> 下载功能从所选 Plex 服务器请求获得授权的视频及相关海报、字幕，用于离线播放。本地目录信息包括名称、服务器与条目标识符、画质、传输状态及生成的文件名，不包含凭据或服务器地址。</p><p><strong>保存与保留方式:</strong> 保存在应用私有文件目录中。已完成的下载在断开 Plex 后仍保留，直到你将其删除。流明不对这些文件额外加密。</p></section>
+<section class="data-entry"><h3>信息: 选中的本地视频与导入的字幕</h3><p><strong>用途与接收方:</strong> 系统文件选择器授予流明访问你所选文件的权限，用于本地播放。流明不会上传这些文件。</p><p><strong>保存与保留方式:</strong> 文件选择器的访问授权仅限当前应用进程。所选视频的位置和导入的字幕文字不会保存为永久影音库；应用重启后需要重新选择。</p></section>
+<section class="data-entry"><h3>信息: 设置、设备能力与网络速度</h3><p><strong>用途与接收方:</strong> 语言、播放和缓存偏好、SDK 版本、减少动态效果偏好，以及解码器和显示能力用于界面与播放。应用接收字节计数用于显示加载速度。</p><p><strong>保存与保留方式:</strong> 设置保存在本地。设备能力与网络速度读数仅在内存中使用，不会发送给流明服务。</p></section>
+<section class="data-entry"><h3>信息: 智能填满的视频采样</h3><p><strong>用途与接收方:</strong> 默认开启的“智能填满”会采样当前视频画面，检测黑边并调整等比缩放。采样对象是视频表面，而非其他应用或整个屏幕。</p><p><strong>保存与保留方式:</strong> 采样仅在内存中处理。流明不保存或传输采样像素。在播放器“画面大小”菜单中选择“完整画面”“等比填满”或“拉伸”即可停止该分析。</p></section>
+<section class="data-entry"><h3>信息: 诊断信息</h3><p><strong>用途与接收方:</strong> 本地日志记录有限的播放状态、耗时、编码或画质信息及错误代码，以便诊断运行问题。智能填满日志包含采样尺寸、耗时与画面几何信息，不包含采样像素。</p><p><strong>保存与保留方式:</strong> 流明不提供远程崩溃报告或日志上传服务。系统日志的处理与保留由 HarmonyOS 管理。</p></section>
+<h2>你可以使用的控制</h2>
+<ul><li>在设置中选择 <strong>“断开 Plex”</strong>，可停止当前账户与服务器的使用，并删除本地保存的登录信息。删除失败时，流明会提示错误，便于重试。断开连接不会在 Plex 端撤销令牌、删除 Plex 账户或服务器观看记录、重新生成本地客户端标识符，也不会清空下载或缓存。</li><li>在设置中选择 <strong>“清除缓存”</strong>，可删除流明管理的缓存条目。你也可以降低海报和文本的缓存上限或关闭缓存。下载内容和独立选择的本地文件不受影响。</li><li>在“本机”的下载菜单中选择 <strong>“删除下载”</strong>，确认后会删除该下载的本地视频、海报和字幕。应用也支持批量删除。此操作不会删除 Plex 服务器中的媒体。</li><li>设置中的 <strong>“允许本地 HTTP”</strong> 允许以未加密方式连接经过验证的私有局域网地址。关闭后会断开当前 HTTP 来源，但保留已关联的账户。</li><li><strong>系统文件选择器</strong> 让你自行选择流明可打开的本地视频与字幕。删除下载或清除流明缓存不会删除独立选择的源文件。</li><li>播放器的 <strong>“画面大小”</strong> 菜单可以通过选择“完整画面”“等比填满”或“拉伸”来关闭智能填满。你的明确选择会保存并用于后续播放。</li></ul>
+<p>流明目前没有一项能够同时删除全部设置、标识符、凭据、缓存和下载的重置操作。卸载行为由 HarmonyOS 应用存储和 Asset Store 管理。断开连接或卸载流明不会删除 Plex 或媒体服务器运营方保存的信息。</p>
+<h2>权限、第三方服务与安全</h2>
+<p>流明申请 HarmonyOS 网络访问权限，不申请广泛文件访问、位置、相机、麦克风、通讯录或广告权限。本地文件通过系统文件选择器访问。</p>
+<p>流明没有集成广告、流明自有分析统计、支付或远程崩溃报告功能。这并不表示 Plex、所选媒体服务器或 HarmonyOS 不会接收信息。这些服务各自适用其隐私规则。服务器运营方可能是你选择的个人或组织，其信息处理地点和保留方式取决于相应服务。对于它们保存的信息，以及访问、更正或删除请求，请向 Plex 或服务器运营方了解和提出。</p>
+<p>Plex 于 2026 年 5 月 6 日修订的隐私政策适用于 Plex GmbH 及其关联公司，包括 Plex, Inc.。该政策说明，Plex 及其授权的数据处理方主要在美国处理个人数据。因此，当你使用流明可选的 Plex 功能时，上文所述发送给 Plex 的信息可能在你所在国家或地区之外处理。你所选择的媒体服务器的位置及信息处理方式则取决于该服务器的运营方。</p>
+<p>Plex 隐私政策：https://www.plex.tv/about/privacy-legal/</p>
+<p>Plex 账户服务使用 HTTPS。流明的 API 客户端会验证所选服务器的身份，将授权令牌放在请求头中，并禁用重定向。本地 HTTP 是可选的，且不加密。HarmonyOS 原生媒体播放器会独立发起播放请求，因此本政策不保证所有媒体连接均被加密。应用私有存储限制其他应用的常规访问，但流明没有为下载文件或缓存内容提供额外加密。</p>
+<h2>隐私咨询与请求</h2>
+<p>如对流明有隐私疑问或相关请求，请联系 <strong>admin@lumenapp.tv</strong>。请说明涉及的功能，不要附上 Plex 密码、授权令牌或私人媒体文件。上述控制可管理应用保存的信息。Plex 或媒体服务器运营方独立保存的信息还需向相应服务方提出请求；流明的本地删除操作无法清除它们的记录。</p>
+<h2>本政策的变更</h2>
+<p>最后更新日期用于识别相应政策版本。流明功能或信息处理方式发生变化时，可能需要更新本政策。</p>
+</main>
+</body>
+</html>

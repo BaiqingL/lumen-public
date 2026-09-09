@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Lumen Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; font: 17px/1.7 system-ui, sans-serif; color: #29251f; background: #faf8f4; }
+body { margin: 0; }
+main { max-width: 54rem; margin: auto; padding: 2rem 1.25rem 4rem; overflow-wrap: anywhere; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+a { color: #80540f; text-underline-offset: .2em; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.2; }
+h2 { margin-top: 2.5rem; font-size: 1.45rem; line-height: 1.4; }
+h3 { margin: 0 0 .75rem; font-size: 1.05rem; line-height: 1.5; }
+p { margin: .75rem 0 1rem; }
+li { margin-bottom: 1rem; }
+ul { padding-left: 1.4rem; }
+code { font-size: .92em; }
+.data-entry { margin: 1rem 0; padding: 1.25rem; border: 1px solid #ddd5c8; border-radius: 1rem; background: #fffdf9; }
+.data-entry p:last-child { margin-bottom: 0; }
+@media (prefers-color-scheme: dark) {
+  :root { color: #eee8df; background: #171612; }
+  a { color: #e8bf70; }
+  .data-entry { background: #201e19; border-color: #4b4336; }
+}
+@media print { :root { color: #000; background: #fff; font-size: 11pt; } nav { display: none; } main { max-width: none; padding: 0; } .data-entry { break-inside: avoid; background: #fff; border-color: #ccc; } }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Language"><a href="privacy.html" lang="en" aria-current="page">English</a><a href="privacy-zh-CN.html" lang="zh-CN">简体中文</a></nav>
+<h1>Lumen Privacy Policy</h1>
+<p>Last updated: September 8, 2026.</p>
+<p>Lumen is a personal video player for HarmonyOS. The developer display name is <strong>Lumen</strong>, and the support and privacy contact is <strong>admin@lumenapp.tv</strong>. This policy describes the app identified by <code>com.lumen.mediaplayer</code>.</p>
+<p>You can open videos and subtitles through the system file picker, or connect a Plex account to access a media server. Lumen does not provide a movie catalog or operate a media-hosting service. Connected features send information to Plex and your selected server as described below; local playback does not upload your selected files to Lumen.</p>
+<h2>Information used by Lumen</h2>
+<section class="data-entry"><h3>Information: Plex authorization and account information</h3><p><strong>Purpose and recipients:</strong> Plex authorizes the code on its website. Lumen contacts <code>plex.tv</code> and <code>clients.plex.tv</code> to complete sign-in and find accessible servers. Lumen does not ask for your Plex password. An account-entitlement response may also include your email address, account identifiers and display/profile name. Lumen uses the subscription status to check feature eligibility.</p><p><strong>Storage and retention:</strong> The account token and preferred server identifier are encrypted in HarmonyOS Asset Store, with synchronization and wrapping/export disabled. They remain available after an app restart or update until you disconnect Plex. Discovered server addresses and tokens remain in memory. The full entitlement response is transient. Lumen does not separately save the returned contact/profile fields or use them for other functions.</p></section>
+<section class="data-entry"><h3>Information: App and playback-session identifiers</h3><p><strong>Purpose and recipients:</strong> Plex and the selected media server receive a random client identifier, a session identifier, app name and version, platform, and device label. Network recipients also receive connection information such as your IP address. These identify the client and support requests and playback.</p><p><strong>Storage and retention:</strong> The client identifier is saved in app preferences and survives Disconnect Plex. Playback-session identifiers are held in memory. Lumen does not use an advertising identifier or hardware identifier.</p></section>
+<section class="data-entry"><h3>Information: Media requests and playback activity</h3><p><strong>Purpose and recipients:</strong> The selected server receives requests for library information, videos, artwork, subtitles and downloads, and playback choices and progress. Progress includes the item identifier, position, duration, and playing, paused, stopped or buffering state. Plex also receives account-entitlement requests for relevant features.</p><p><strong>Storage and retention:</strong> Active request and playback state is held in memory. Plex and the server operator determine the retention of records in their systems.</p></section>
+<section class="data-entry"><h3>Information: Library search text</h3><p><strong>Purpose and recipients:</strong> Lumen filters the library rows already loaded on your device. Search text is not sent to Plex, the media server or a Lumen service.</p><p><strong>Storage and retention:</strong> Used for the current view; Lumen does not keep a search-history record.</p></section>
+<section class="data-entry"><h3>Information: Cached artwork, subtitles and library display information</h3><p><strong>Purpose and recipients:</strong> Local caching avoids repeated requests. Cached information can include media titles and viewing progress.</p><p><strong>Storage and retention:</strong> Stored in the app-private cache directory, with expiry and size-based removal. Default limits are 256 MiB for artwork and 32 MiB for text. Clear cache removes these entries. Lumen does not separately encrypt their contents.</p></section>
+<section class="data-entry"><h3>Information: Downloaded media and its catalog</h3><p><strong>Purpose and recipients:</strong> Downloads request authorized videos and related artwork and subtitles from your selected Plex server for offline playback. The local catalog includes titles, server and item identifiers, quality, transfer state and generated filenames. It excludes credentials and server URLs.</p><p><strong>Storage and retention:</strong> Stored in the app-private files directory. Completed downloads remain after Disconnect Plex, until you delete them. Lumen does not add separate encryption to these files.</p></section>
+<section class="data-entry"><h3>Information: Selected local videos and imported subtitles</h3><p><strong>Purpose and recipients:</strong> The system file picker grants access to the files you select for local playback. Lumen does not upload those files.</p><p><strong>Storage and retention:</strong> Picker access is limited to the app process. Selected video locations and imported subtitle text are not saved as a permanent library; you need to select them again after restarting the app.</p></section>
+<section class="data-entry"><h3>Information: Settings, device capabilities and network speed</h3><p><strong>Purpose and recipients:</strong> Language, playback and cache preferences, SDK level, reduced-motion preferences, and decoder/display capabilities support the interface and playback. The app's received-byte counter is used to show loading speed.</p><p><strong>Storage and retention:</strong> Settings are saved locally. Capability and network-speed readings are used in memory and are not sent to a Lumen service.</p></section>
+<section class="data-entry"><h3>Information: Video samples for Intelligent Fill</h3><p><strong>Purpose and recipients:</strong> Intelligent Fill, enabled by default, samples the current video picture to detect black borders and adjust proportional zoom. It samples the video surface, not other apps or the whole screen.</p><p><strong>Storage and retention:</strong> Samples are processed only in memory. Lumen neither saves nor transmits the sampled pixels. Choose Letterbox, Zoom or Stretch in the player's Size menu to stop this analysis.</p></section>
+<section class="data-entry"><h3>Information: Diagnostic messages</h3><p><strong>Purpose and recipients:</strong> Local logs record bounded playback states, timing, codec/quality information and error codes to help diagnose operation. Intelligent Fill logs contain sample dimensions, elapsed time and geometry, not sampled pixels.</p><p><strong>Storage and retention:</strong> Lumen has no remote crash-reporting or log-upload service. Operating-system log handling and retention are controlled by HarmonyOS.</p></section>
+<h2>Your controls</h2>
+<ul><li><strong>Disconnect Plex</strong>, in Settings, stops live account and server use and removes the saved local sign-in. If removal fails, Lumen shows an error so you can retry. Disconnecting does not revoke the token on Plex, delete your Plex account or server viewing history, rotate the local client identifier, or erase downloads and cache entries.</li><li><strong>Clear cache</strong>, in Settings, removes Lumen's owned cache entries. You can also reduce the artwork and text limits or turn caching off. Downloads and independently selected local files remain.</li><li><strong>Delete download</strong>, in the On device download menu, removes that download's local video, artwork and subtitles after confirmation. Group deletion is also available. It does not delete media from the Plex server.</li><li><strong>Allow local HTTP</strong>, in Settings, permits unencrypted connections to validated private-network addresses. Turning it off disconnects an active HTTP source while retaining your linked account.</li><li>The <strong>system file picker</strong> lets you choose which local videos and subtitle files Lumen may open. Removing a download or clearing Lumen's cache does not delete independently selected source files.</li><li>The player's <strong>Size</strong> menu lets you turn off Intelligent Fill by selecting Letterbox, Zoom or Stretch. Your explicit choice is saved for later playback.</li></ul>
+<p>Lumen does not currently provide a single reset action that removes all settings, identifiers, credentials, cache entries and downloads together. Uninstall behavior is governed by HarmonyOS app storage and Asset Store. Disconnecting or uninstalling Lumen does not delete information held by Plex or a media-server operator.</p>
+<h2>Permissions, services and security</h2>
+<p>Lumen requests the HarmonyOS Internet permission. It does not request broad file access, location, camera, microphone, contacts or advertising permissions. Local files are accessed through the system picker.</p>
+<p>Lumen has no advertising, first-party analytics, payment or remote crash-reporting integration. This does not mean that Plex, your selected media server or HarmonyOS receives no information. Their services have their own privacy practices. Server operators may be individuals or organizations you choose; their processing locations and retention depend on that service. Consult Plex and your server operator about information held by them and requests to access, correct or delete it.</p>
+<p>Plex's Privacy Policy, revised May 6, 2026, covers Plex GmbH and its affiliates, including Plex, Inc. It states that Plex and its authorized data processors process personal data primarily in the United States. When you use Lumen's optional Plex features, the information sent to Plex as described above may therefore be processed outside your country or region. The location and data handling of a media server you select depend on its operator.</p>
+<p>Plex Privacy Policy: https://www.plex.tv/about/privacy-legal/</p>
+<p>Plex account services use HTTPS. Lumen's API client validates the selected server's identity, sends authorization tokens in headers and disables redirects. Local HTTP is optional and unencrypted. HarmonyOS's native media player makes its own playback requests, so this policy does not promise that every media connection is encrypted. App-private storage restricts ordinary access by other apps, but downloaded files and cache contents have no additional encryption from Lumen.</p>
+<h2>Privacy questions and requests</h2>
+<p>Contact <strong>admin@lumenapp.tv</strong> with privacy questions or requests concerning Lumen. Please describe the feature involved and do not include your Plex password, authorization tokens, or private media files. The controls above manage information stored by the app. Information held independently by Plex or your media-server operator must also be addressed with that provider; Lumen's local deletion controls cannot erase their records.</p>
+<h2>Changes to this policy</h2>
+<p>The last-updated date identifies this version of the policy. Changes to Lumen's features or data handling may require an updated policy.</p>
+</main>
+</body>
+</html>
