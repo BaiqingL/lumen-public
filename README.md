@@ -4,6 +4,7 @@ Public information for Lumen, the personal video player for HarmonyOS (`com.lume
 
 - [English privacy policy](https://baiqingl.github.io/lumen-public/privacy.html)
 - [简体中文隐私政策](https://baiqingl.github.io/lumen-public/privacy-zh-CN.html)
+- [Original demonstration videos and subtitles](https://baiqingl.github.io/lumen-public/demo.html)
 - [Native source, relink kit and checksums](https://baiqingl.github.io/lumen-public/source.html)
 - [Issued native relinking permission — version 0.1.0 / 1000000](https://baiqingl.github.io/lumen-public/relink-permission-0.1.0-1000000.html)
 
