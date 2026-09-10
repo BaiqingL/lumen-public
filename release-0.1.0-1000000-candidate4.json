@@ -9,14 +9,14 @@
   "sourcePage": "https://baiqingl.github.io/lumen-public/source.html",
   "packages": {
     "app": {
-      "file": "lumen-0.1.0-1000000-candidate5-distribution-signed.app",
-      "bytes": 1377259,
-      "sha256": "1810310975c8ed6e2b334694680f778bdcf5fe0b9ba0884937ce1d92c8cc58eb"
+      "file": "lumen-0.1.0-1000000-candidate4-distribution-signed.app",
+      "bytes": 1377184,
+      "sha256": "a74e372c93329f42133072b9d88a994cae6ed9a47807b8dfb6b01c37a15068a9"
     },
     "hap": {
-      "file": "lumen-0.1.0-1000000-candidate5-distribution-signed.hap",
-      "bytes": 3434973,
-      "sha256": "221b4013e71cfe361a1adbf8e62b002edd0629065767f67f8408a82fa49328b9"
+      "file": "lumen-0.1.0-1000000-candidate4-distribution-signed.hap",
+      "bytes": 3434916,
+      "sha256": "780d09fc9a5091099fae6cc0dc78b233e61472e78677288ca1201097a40c8f89"
     }
   },
   "nativeCorrespondenceVerified": true,
