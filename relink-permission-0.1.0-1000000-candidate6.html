@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Lumen candidate 6 native relinking permission</title>
+<style>
+:root { color-scheme: light dark; font: 17px/1.7 system-ui, sans-serif; color: #29251f; background: #faf8f4; }
+body { margin: 0; }
+main { max-width: 54rem; margin: auto; padding: 2rem 1.25rem 4rem; overflow-wrap: anywhere; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+a { color: #80540f; text-underline-offset: .2em; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.2; }
+h2 { margin-top: 2.5rem; font-size: 1.45rem; line-height: 1.4; }
+p { margin: .75rem 0 1rem; }
+li { margin-bottom: .8rem; }
+ul { padding-left: 1.4rem; }
+code { font-size: .9em; }
+pre { overflow-x: auto; padding: 1rem; border: 1px solid #ddd5c8; border-radius: .75rem; background: #fffdf9; }
+dl { display: grid; grid-template-columns: minmax(8rem, 1fr) minmax(0, 3fr); gap: .7rem 1rem; }
+dt { font-weight: 600; }
+dd { margin: 0; }
+@media (max-width: 35rem) { dl { display: block; } dd { margin: .2rem 0 1rem; } }
+@media (prefers-color-scheme: dark) { :root { color: #eee8df; background: #171612; } a { color: #e8bf70; } pre { background: #201e19; border-color: #4b4336; } }
+@media print { :root { color: #000; background: #fff; font-size: 11pt; } nav { display: none; } main { max-width: none; padding: 0; } }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Lumen information"><a href="source.html">Source &amp; relinking</a><a href="privacy.html" lang="en">Privacy policy</a><a href="privacy-zh-CN.html" lang="zh-CN">隐私政策</a></nav>
+<h1>Lumen native relinking permission</h1>
+<p>Issued by <strong>Baiqing Lyu (Lumen)</strong>. Original operative permission approved and issued September 8, 2026; candidate6 technical release association updated <strong>September 11, 2026</strong>, following the publisher&#x27;s approval. The recipient permission and covered material scope below are unchanged.</p>
+<h2>Covered release</h2>
+<ul><li>Application: Lumen <code>0.1.0</code>, build <code>1000000</code>, bundle <code>com.lumen.mediaplayer</code>; candidate6.</li><li>Native implementation: <code>d626e534e97efbb0c9771396fdbc40b5d81d6971</code>.</li><li>Native library: <code>liblumencapabilities.so</code>, ARM64, 676,744 bytes.</li><li>Native library SHA-256: <code>d5dd5d01006e570faa90463763bcf7abce513dd6791ec955c0861f7c08942601</code>.</li><li>Version-specific kit: <code>lumen-0.1.0-1000000-candidate6-native-relink-d5dd5d01.zip</code>.</li><li>Source and relink download page: <a href="https://lumenapp.tv/source.html">https://lumenapp.tv/source.html</a></li><li>Release record and detached checksum: <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate6">https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate6</a></li><li>Candidate6 permission metadata: <a href="https://lumenapp.tv/relink-permission-0.1.0-1000000-candidate6.md">https://lumenapp.tv/relink-permission-0.1.0-1000000-candidate6.md</a></li></ul>
+<p>The kit&#x27;s <code>manifest.json</code> identifies the supplied files and their SHA-256 hashes. The release record supplies the checksum of the complete archive. These identifiers associate this permission with the supplied original materials; they do not expand its scope. Historical kits and release associations remain separate.</p>
+<h2>Recipient permission</h2>
+<p>Lumen&#x27;s native relink kit contains third-party software and a limited set of original Lumen application materials. This permission applies only to the original Lumen materials expressly listed below, supplied in the version-specific kit. Third-party software remains governed by its own notices and licenses, including the GNU Lesser General Public License, version 2.1 or later. This permission does not limit those third-party rights.</p>
+<p>The covered original Lumen materials are:</p>
+<ul><li><code>objects/capabilities.cpp.o</code></li><li><code>objects/local_source.cpp.o</code></li><li><code>objects/local_subtitles.cpp.o</code></li><li><code>objects/matroska_subtitles.cpp.o</code></li><li><code>objects/dolby_config.cpp.o</code></li><li><code>objects/dolby_http.cpp.o</code></li><li><code>native/dolby_session.cpp</code></li><li><code>native/dolby_session.h</code></li><li><code>native/dolby_config.h</code></li><li><code>native/dolby_http.h</code></li><li><code>native/exports.map</code></li><li>The kit&#x27;s <code>rebuild.py</code>, <code>replace-native.py</code> and accompanying rebuild instructions.</li></ul>
+<p>The publisher grants recipients a non-exclusive, worldwide, royalty-free permission to copy and use these covered materials to rebuild or relink their copy of Lumen with a modified or replacement version of the LGPL-covered native library. Recipients may modify the supplied integration source, rebuild instructions and scripts for that purpose. They may modify their copy of Lumen for their own use, use the resulting modified application, and reverse engineer or debug Lumen to debug those modifications.</p>
+<p>This permission applies to the covered materials supplied with the kit and continues for those copies. Recipients must retain the accompanying copyright, license and attribution notices. The publisher does not require access to its private repository, a publisher account, or the publisher&#x27;s signing keys to exercise this permission. Platform signing and installation requirements remain separate from this permission.</p>
+<p>This permission does not grant a general license to Lumen&#x27;s unrelated application source, artwork, name or trademarks. It does not grant redistribution rights for modified Lumen application binaries or the covered original application materials beyond rights otherwise provided by applicable law or an accompanying license. Redistribution, modification and other rights in the LGPL-covered and other third-party portions remain governed by their respective licenses and are not restricted by this paragraph.</p>
+<p>The covered materials are supplied without warranty to the extent permitted by applicable law. This does not limit rights that applicable law does not allow to be limited. Modified builds are not represented as publisher-signed, publisher-supported or officially reviewed releases.</p>
+<p>Questions about obtaining the matching kit or using these materials may be sent to <code>admin@lumenapp.tv</code>.</p>
+</main>
+</body>
+</html>

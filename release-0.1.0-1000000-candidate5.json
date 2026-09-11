@@ -1,0 +1,24 @@
+{
+  "versionName": "0.1.0",
+  "versionCode": 1000000,
+  "bundleName": "com.lumen.mediaplayer",
+  "status": "AppGallery distribution package prepared; store acceptance is separate",
+  "nativeLibrarySha256": "4ffb19a289978e51289fdc2c2ea65d5ad179bf299d37a0fc7f375e46143c0996",
+  "nativeKitSha256": "63244c648b94fb20aaa2784b720ad254f127be6b00daea51d0598ee00696f1c0",
+  "nativeKitDownload": "https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.1.0-1000000/lumen-0.1.0-1000000-native-relink-2df59fc-issued.zip",
+  "sourcePage": "https://baiqingl.github.io/lumen-public/source.html",
+  "packages": {
+    "app": {
+      "file": "lumen-0.1.0-1000000-candidate5-distribution-signed.app",
+      "bytes": 1377259,
+      "sha256": "1810310975c8ed6e2b334694680f778bdcf5fe0b9ba0884937ce1d92c8cc58eb"
+    },
+    "hap": {
+      "file": "lumen-0.1.0-1000000-candidate5-distribution-signed.hap",
+      "bytes": 3434973,
+      "sha256": "221b4013e71cfe361a1adbf8e62b002edd0629065767f67f8408a82fa49328b9"
+    }
+  },
+  "nativeCorrespondenceVerified": true,
+  "applicationBinariesHostedHere": false
+}

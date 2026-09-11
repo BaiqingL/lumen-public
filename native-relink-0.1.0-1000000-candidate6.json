@@ -1,0 +1,20 @@
+{
+  "versionName": "0.1.0",
+  "versionCode": 1000000,
+  "candidate": 6,
+  "sourceCommit": "d626e534e97efbb0c9771396fdbc40b5d81d6971",
+  "minimumApi": 23,
+  "targetApi": 23,
+  "zip": "lumen-0.1.0-1000000-candidate6-native-relink-d5dd5d01.zip",
+  "bytes": 6971883,
+  "sha256": "d79bec948da6ef69e286f6193233c6cc690d7a8b4fd89c8e7bbf1640f4c22ef7",
+  "members": 66,
+  "downloadUrl": "https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.1.0-1000000-candidate6/lumen-0.1.0-1000000-candidate6-native-relink-d5dd5d01.zip",
+  "nativeLibraryBytes": 676744,
+  "nativeLibrarySha256": "d5dd5d01006e570faa90463763bcf7abce513dd6791ec955c0861f7c08942601",
+  "permissionSha256": "c479942c345559359f4d5693abb4716c88d00596255dd3ba75812a53218cc432",
+  "operativePermissionUnchanged": true,
+  "nativeRebuildByteIdentical": true,
+  "modifiedHeaderRebuildAndUnsignedReplacementPassed": true,
+  "recipientSigningAndInstallationTested": false
+}
