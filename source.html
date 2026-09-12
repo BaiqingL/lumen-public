@@ -32,10 +32,11 @@ dd { margin: 0; }
 <main>
 <nav aria-label="Lumen information"><a href="source.html">Source &amp; relinking</a><a href="privacy.html" lang="en">Privacy policy</a><a href="privacy-zh-CN.html" lang="zh-CN">隐私政策</a></nav>
 <h1>Lumen native source &amp; relinking</h1>
-<p>Publisher: <strong>Baiqing Lyu (Lumen)</strong>. Candidate 6 materials updated September 11, 2026.</p>
+<p>Publisher: <strong>Baiqing Lyu (Lumen)</strong>. Candidate 7 package correspondence updated September 12, 2026 UTC.</p>
 <p>Download the matching native source and relinking materials for Lumen without access to the private application repository or a GitHub account.</p>
 <p lang="zh-CN">此页面提供流明 Lumen 对应版本的原生代码及重新链接材料。下载无需 GitHub 账号，也无需访问应用的私有代码仓库。第三方许可证和声明保留在压缩包内；指定 Lumen 材料适用下方的有限重新链接许可。</p>
-<h2>Version 0.1.0 · build 1000000 · candidate 6</h2>
+<h2>Version 0.1.0 · build 1000000 · candidate 7</h2>
+<p>Candidate 7 reuses the candidate 6 native kit below. Only application bytecode changed; the native library is byte-identical. The existing archive, rebuild instructions and permission documents are unchanged.</p>
 <p><a href="https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.1.0-1000000-candidate6/lumen-0.1.0-1000000-candidate6-native-relink-d5dd5d01.zip">Download native source and relink kit (ZIP, 6.97 MB)</a></p>
 <p><a href="native-relink-0.1.0-1000000-candidate6.sha256">SHA-256 checksum</a> · <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate6">Versioned source release</a> · <a href="rebuild-0.1.0-1000000-candidate6.md">Rebuild instructions</a></p>
 <dl>
@@ -45,7 +46,8 @@ dd { margin: 0; }
 <dt>ZIP SHA-256</dt><dd><code>d79bec948da6ef69e286f6193233c6cc690d7a8b4fd89c8e7bbf1640f4c22ef7</code></dd>
 <dt>Native library</dt><dd><code>liblumencapabilities.so</code>, ARM64, 676,744 bytes</dd>
 <dt>Native SHA-256</dt><dd><code>d5dd5d01006e570faa90463763bcf7abce513dd6791ec955c0861f7c08942601</code></dd>
-<dt>Source baseline</dt><dd><code>d626e534e97efbb0c9771396fdbc40b5d81d6971</code></dd>
+<dt>Application source</dt><dd><code>b49b63fd24954fe84edc79c4d307448e04eab09f</code></dd>
+<dt>Native source baseline</dt><dd><code>d626e534e97efbb0c9771396fdbc40b5d81d6971</code></dd>
 </dl>
 <h2>Included materials and verification</h2>
 <p>The kit includes editable LGPL renderer, frame and shader sources, geometry and lifecycle headers, the generator, narrow Lumen integration source, six original application objects, the MIT parser archive and its source references, notices and standalone rebuild scripts. It excludes unrelated application source, media and publisher signing credentials.</p>
@@ -57,11 +59,11 @@ dd { margin: 0; }
 <pre><code>python -X utf8 rebuild.py --sdk 'C:/Program Files/Huawei/DevEco Studio/sdk/default/openharmony/native' --verify-inputs</code></pre>
 <p>The build uses the supplied contents and installed SDK. After editing sources, omit <code>--verify-inputs</code> because their original hashes intentionally differ. The helper creates an unsigned HAP; recipient signing and installation require matching personal Huawei credentials and a separate test environment, and have not been tested. The parser archive is reused with the historical provenance limits described in its notices.</p>
 <h2>Matching the application package</h2>
-<p>The <a href="release-0.1.0-1000000-candidate6.json">candidate 6 correspondence record</a> and <a href="release-0.1.0-1000000.json">current record</a> associate the exact distribution package with this kit.</p>
-<dl><dt>APP SHA-256</dt><dd><code>eee76f1f5d0cd6ee7d437e43c78819ad07db71119f80fd3f197638a56c9f3338</code></dd><dt>HAP SHA-256</dt><dd><code>48b97e8a8bed43f67ad516640a25f74a2dbe803607b083b239135c13c0d810a4</code></dd></dl>
+<p>The <a href="release-0.1.0-1000000-candidate7.json">candidate 7 correspondence record</a> and <a href="release-0.1.0-1000000.json">current record</a> associate the exact distribution package with this kit.</p>
+<dl><dt>APP SHA-256</dt><dd><code>c21d4dbcc4817c37784e8247f452b7bc50768fc6ab5f0084563db307c839230b</code></dd><dt>HAP SHA-256</dt><dd><code>ab46bac123603c54cd8cadea117cffc8c42acd01e985e4ca2eb4705ec04d8d44</code></dd></dl>
 <p>Source-kit validation and package preparation are separate from AppGallery approval. Application binaries are not hosted here.</p>
 <h2>Historical materials</h2>
-<p>The <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000">earlier native kit</a>, <a href="release-0.1.0-1000000-candidate5.json">candidate 5 package record</a> and <a href="release-0.1.0-1000000-candidate4.json">candidate 4 package record</a> remain available. Use the native-library hash to select the corresponding kit.</p>
+<p>The <a href="release-0.1.0-1000000-candidate6.json">candidate 6 package record</a>, <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000">earlier native kit</a>, <a href="release-0.1.0-1000000-candidate5.json">candidate 5 package record</a> and <a href="release-0.1.0-1000000-candidate4.json">candidate 4 package record</a> remain available. Use the native-library hash to select the corresponding kit.</p>
 <h2>Contact</h2><p>For matching materials, contact <a href="mailto:admin@lumenapp.tv">admin@lumenapp.tv</a> with the app version, build and native-library hash if available.</p>
 </main>
 </body>
