@@ -1,11 +1,11 @@
 {
   "versionName": "0.1.0",
   "versionCode": 1000000,
-  "candidate": 7,
+  "candidate": 8,
   "bundleName": "com.lumen.mediaplayer",
   "minimumApi": 23,
   "targetApi": 23,
-  "sourceCommit": "b49b63fd24954fe84edc79c4d307448e04eab09f",
+  "sourceCommit": "eeaf47a828116c35d6c68bfd541cc6e49bb709ec",
   "status": "AppGallery distribution package prepared; store acceptance is separate",
   "nativeLibrarySha256": "d5dd5d01006e570faa90463763bcf7abce513dd6791ec955c0861f7c08942601",
   "nativeKitSha256": "d79bec948da6ef69e286f6193233c6cc690d7a8b4fd89c8e7bbf1640f4c22ef7",
@@ -13,20 +13,25 @@
   "sourcePage": "https://lumenapp.tv/source.html",
   "packages": {
     "app": {
-      "file": "lumen-0.1.0-1000000-candidate7-distribution-signed.app",
-      "bytes": 1410032,
-      "sha256": "c21d4dbcc4817c37784e8247f452b7bc50768fc6ab5f0084563db307c839230b"
+      "file": "liuming-0.1.0-1000000-candidate8-distribution-signed.app",
+      "bytes": 1412445,
+      "sha256": "47d967477361e7e24758049930af5e3f806f94551f46aa19e3dad575315efb1d"
     },
     "hap": {
-      "file": "lumen-0.1.0-1000000-candidate7-distribution-signed.hap",
-      "bytes": 3499557,
-      "sha256": "ab46bac123603c54cd8cadea117cffc8c42acd01e985e4ca2eb4705ec04d8d44"
+      "file": "liuming-0.1.0-1000000-candidate8-distribution-signed.hap",
+      "bytes": 3502712,
+      "sha256": "4cd1c2b739b0c3dad7f70bd9c57346765a890a3e606919b22565497695d8e57f"
     }
   },
   "nativeCorrespondenceVerified": true,
   "applicationBinariesHostedHere": false,
-  "previousCandidateRecord": "https://lumenapp.tv/release-0.1.0-1000000-candidate6.json",
+  "previousCandidateRecord": "https://lumenapp.tv/release-0.1.0-1000000-candidate7.json",
   "nativeSourceCommit": "d626e534e97efbb0c9771396fdbc40b5d81d6971",
   "nativeKitCandidate": 6,
-  "nativeKitReused": true
+  "nativeKitReused": true,
+  "displayNames": {
+    "en": "Liuming Player",
+    "zh-CN": "流明影音"
+  },
+  "preparedAtUtc": "2026-10-05T04:00:51.697334+00:00"
 }

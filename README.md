@@ -1,6 +1,8 @@
-# Lumen public information
+# Liuming Player / 流明影音 public information
 
-Public information for Lumen, the personal video player for HarmonyOS (`com.lumen.mediaplayer`).
+Public information for Liuming Player / 流明影音, the personal video player for HarmonyOS (`com.lumen.mediaplayer`).
+
+The current package correspondence identifies the verified candidate 8 distribution package. The domain, repository identifiers, publisher identity and issued native relinking permission are unchanged. Historical package records remain available. AppGallery submission and approval are separate.
 
 - [English privacy policy](https://baiqingl.github.io/lumen-public/privacy.html)
 - [简体中文隐私政策](https://baiqingl.github.io/lumen-public/privacy-zh-CN.html)
@@ -10,6 +12,6 @@ Public information for Lumen, the personal video player for HarmonyOS (`com.lume
 
 Publisher: **Baiqing Lyu (Lumen)**. Support and privacy contact: **admin@lumenapp.tv**.
 
-The native kit is supplied as a versioned release download. It includes the limited original materials named in the issued permission and preserves third-party licenses. This public repository does not publish the unrelated private application source or grant it a general open-source license.
+The native kit is supplied as a versioned release download. It includes the limited original materials named in the issued permission and preserves third-party licenses. Historical Lumen kit names, permission documents, package records and original demonstration filenames remain unchanged. This public repository does not publish the unrelated private application source or grant it a general open-source license.
 
 These static pages contain no tracking, scripts, or external media dependencies.
