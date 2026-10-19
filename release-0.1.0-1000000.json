@@ -1,38 +1,36 @@
 {
   "versionName": "0.1.0",
   "versionCode": 1000000,
-  "candidate": 9,
+  "candidate": 10,
   "bundleName": "com.lumen.mediaplayer",
   "minimumApi": 23,
   "targetApi": 23,
-  "sourceCommit": "828cbe3adec1e92c81f5e6e282101e7dd1eb5266",
+  "sourceCommit": "278294da0b0158a18e446d85691379a9fae89135",
   "status": "AppGallery distribution package prepared; store acceptance is separate",
-  "nativeLibrarySha256": "d5dd5d01006e570faa90463763bcf7abce513dd6791ec955c0861f7c08942601",
-  "nativeKitSha256": "d79bec948da6ef69e286f6193233c6cc690d7a8b4fd89c8e7bbf1640f4c22ef7",
-  "nativeKitDownload": "https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.1.0-1000000-candidate6/lumen-0.1.0-1000000-candidate6-native-relink-d5dd5d01.zip",
+  "nativeLibrarySha256": "8b2df05f01536b56c637cf50b347524617cbcf530bf56bc540cf0cd481232959",
+  "nativeKitSha256": "b4e0b3b78a36857aa6778a2d567a6f23680091cc389421d41675f14456678065",
+  "nativeKitDownload": "https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.1.0-1000000-candidate10/lumen-0.1.0-1000000-candidate10-native-relink-8b2df05f.zip",
   "sourcePage": "https://lumenapp.tv/source.html",
   "packages": {
     "app": {
-      "file": "liuming-0.1.0-1000000-candidate9r2-distribution-signed.app",
-      "bytes": 1419577,
-      "sha256": "98f7c4fd23a7549f15d8d2587240b7433ab21b0a8aa0d704b3be4c4afc4dd0ee"
+      "file": "liuming-0.1.0-1000000-candidate10-distribution-signed.app",
+      "bytes": 1414814,
+      "sha256": "5e9d834e1f56ff58ae43df351de54da197f86a8400ac4796ca86ded3f72beea3"
     },
     "hap": {
-      "file": "liuming-0.1.0-1000000-candidate9r2-distribution-signed.hap",
-      "bytes": 3522329,
-      "sha256": "771768dbe3e9025b707689266f63036344b078ded18492482a5e75211ea86a38"
+      "file": "liuming-0.1.0-1000000-candidate10-distribution-signed.hap",
+      "bytes": 3512205,
+      "sha256": "d15d5fe670fd3acb88b222996c7f34e85a69323fb35bed4c879c3a6e9a6386ac"
     }
   },
   "nativeCorrespondenceVerified": true,
   "applicationBinariesHostedHere": false,
-  "previousCandidateRecord": "https://lumenapp.tv/release-0.1.0-1000000-candidate8.json",
-  "nativeSourceCommit": "d626e534e97efbb0c9771396fdbc40b5d81d6971",
-  "nativeKitCandidate": 6,
-  "nativeKitReused": true,
+  "previousCandidateRecord": "https://lumenapp.tv/release-0.1.0-1000000-candidate9r2.json",
+  "nativeSourceCommit": "278294da0b0158a18e446d85691379a9fae89135",
+  "nativeKitCandidate": 10,
+  "nativeKitReused": false,
   "displayNames": {
     "en": "Liuming Player",
-    "zh-CN": "流明影音"
-  },
-  "preparedAtUtc": "2026-10-18T22:05:57.277318+00:00",
-  "revision": 2
+    "zh-CN": "\u6d41\u660e\u5f71\u97f3"
+  }
 }
