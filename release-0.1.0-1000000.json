@@ -1,11 +1,11 @@
 {
   "versionName": "0.1.0",
   "versionCode": 1000000,
-  "candidate": 11,
+  "candidate": 12,
   "bundleName": "com.lumen.mediaplayer",
   "minimumApi": 23,
   "targetApi": 23,
-  "sourceCommit": "fbaef5a2766d6cd7190930433b292084cbf3bbc8",
+  "sourceCommit": "b9df7688b8b3b04309964d4d0e20fafaee6338dd",
   "status": "AppGallery distribution package prepared; store acceptance is separate",
   "nativeLibrarySha256": "8b2df05f01536b56c637cf50b347524617cbcf530bf56bc540cf0cd481232959",
   "nativeKitSha256": "b4e0b3b78a36857aa6778a2d567a6f23680091cc389421d41675f14456678065",
@@ -13,24 +13,25 @@
   "sourcePage": "https://lumenapp.tv/source.html",
   "packages": {
     "app": {
-      "file": "liuming-0.1.0-1000000-candidate11-distribution-signed.app",
-      "bytes": 1416619,
-      "sha256": "541e16e2d7d240704e5b25d411f43f8d6438a56245ddb826a7162b3584eeb2d8"
+      "file": "liuming-0.1.0-1000000-candidate12-distribution-signed.app",
+      "bytes": 1416630,
+      "sha256": "566925c56fae75c805fc5bbbd9789b72db05c865607730c9f738dbf548a2be3b"
     },
     "hap": {
-      "file": "liuming-0.1.0-1000000-candidate11-distribution-signed.hap",
-      "bytes": 3515354,
-      "sha256": "53725f4b57abbc9dbcb1c12bebdd6d1f615911c5dd211e6567a81d695d432ae6"
+      "file": "liuming-0.1.0-1000000-candidate12-distribution-signed.hap",
+      "bytes": 3515465,
+      "sha256": "5edb819cfb28e58d70f47a69475aa50527cc16aef67a9cce593d08de9d6fab8b"
     }
   },
   "nativeCorrespondenceVerified": true,
   "applicationBinariesHostedHere": false,
-  "previousCandidateRecord": "https://lumenapp.tv/release-0.1.0-1000000-candidate10.json",
+  "previousCandidateRecord": "https://lumenapp.tv/release-0.1.0-1000000-candidate11.json",
   "nativeSourceCommit": "278294da0b0158a18e446d85691379a9fae89135",
   "nativeKitCandidate": 10,
   "nativeKitReused": true,
   "displayNames": {
     "en": "Liuming Player",
     "zh-CN": "\u6d41\u660e\u64ad\u653e\u5668"
-  }
+  },
+  "changeSummary": "Restore the original translucent floating navigation; retain candidate 11 download eligibility and publishing fixes."
 }

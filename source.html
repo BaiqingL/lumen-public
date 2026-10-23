@@ -32,7 +32,7 @@ dd { margin: 0; }
 <main>
 <nav aria-label="Lumen information"><a href="source.html">Source &amp; relinking</a><a href="privacy.html" lang="en">Privacy policy</a><a href="privacy-zh-CN.html" lang="zh-CN">隐私政策</a></nav>
 <h1>Lumen native source &amp; relinking</h1>
-<p>Publisher: <strong>Baiqing Lyu (Lumen)</strong>. Application correspondence updated October 23, 2026. Candidate 11 uses the unchanged candidate 10 native kit below.</p>
+<p>Publisher: <strong>Baiqing Lyu (Lumen)</strong>. Application correspondence updated October 23, 2026. Candidate 12 uses the unchanged candidate 10 native kit below.</p>
 <p>Download the matching native source and relinking materials for Lumen without access to the private application repository or a GitHub account.</p>
 <p lang="zh-CN">此页面提供流明 Lumen 对应版本的原生代码及重新链接材料。下载无需 GitHub 账号，也无需访问应用的私有代码仓库。第三方许可证和声明保留在压缩包内；指定 Lumen 材料适用下方的有限重新链接许可。</p>
 <h2>Version 0.1.0 · build 1000000 · candidate 10</h2>
@@ -57,11 +57,12 @@ dd { margin: 0; }
 <pre><code>python -X utf8 rebuild.py --sdk 'C:/Program Files/Huawei/DevEco Studio/sdk/default/openharmony/native' --verify-inputs</code></pre>
 <p>The build uses the supplied contents and installed SDK. After editing sources, omit <code>--verify-inputs</code> because their original hashes intentionally differ. The helper creates an unsigned HAP; recipient signing and installation require matching personal Huawei credentials and a separate test environment, and have not been tested. The parser archive is reused with the historical provenance limits described in its notices.</p>
 <h2>Matching the application package</h2>
-<p>The <a href="release-0.1.0-1000000-candidate11.json">candidate 11 correspondence record</a> and <a href="release-0.1.0-1000000.json">current record</a> associate the exact distribution package with this kit.</p>
-<dl><dt>APP SHA-256</dt><dd><code>541e16e2d7d240704e5b25d411f43f8d6438a56245ddb826a7162b3584eeb2d8</code></dd><dt>HAP SHA-256</dt><dd><code>53725f4b57abbc9dbcb1c12bebdd6d1f615911c5dd211e6567a81d695d432ae6</code></dd></dl>
+<p>The <a href="release-0.1.0-1000000-candidate12.json">candidate 12 correspondence record</a> and <a href="release-0.1.0-1000000.json">current record</a> associate the exact distribution package with this kit.</p>
+<dl><dt>APP SHA-256</dt><dd><code>566925c56fae75c805fc5bbbd9789b72db05c865607730c9f738dbf548a2be3b</code></dd><dt>HAP SHA-256</dt><dd><code>5edb819cfb28e58d70f47a69475aa50527cc16aef67a9cce593d08de9d6fab8b</code></dd></dl>
 <p>Source-kit validation and package preparation are separate from AppGallery approval. Application binaries are not hosted here.</p>
-<p>The native library is identical in candidates 10 and 11. Application source changed for download eligibility presentation, navigation and the Chinese display name; the existing native source baseline and recipient permission remain applicable.</p>
+<p>The native library is identical in candidates 10, 11 and 12. Candidate 12 restores translucent floating navigation and retains the download eligibility and Chinese-name changes from candidate 11. The existing native source baseline and recipient permission remain applicable.</p>
 <h2>Historical materials</h2>
+<p><a href="release-0.1.0-1000000-candidate11.json">Candidate 11 application correspondence</a> is retained.</p>
 <p><a href="release-0.1.0-1000000-candidate10.json">Candidate 10 application correspondence</a> is retained.</p>
 <p>The <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate6">candidate 6 native kit</a>, <a href="release-0.1.0-1000000-candidate9r2.json">candidate 9r2 record</a>, <a href="release-0.1.0-1000000-candidate8.json">candidate 8 record</a> and <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000">earlier native kit</a>, <a href="release-0.1.0-1000000-candidate5.json">candidate 5 package record</a> and <a href="release-0.1.0-1000000-candidate4.json">candidate 4 package record</a> remain available. Use the native-library hash to select the corresponding kit.</p>
 <h2>Contact</h2><p>For matching materials, contact <a href="mailto:admin@lumenapp.tv">admin@lumenapp.tv</a> with the app version, build and native-library hash if available.</p>
