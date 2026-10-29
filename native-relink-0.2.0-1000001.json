@@ -1,0 +1,26 @@
+{
+  "versionName": "0.2.0",
+  "versionCode": 1000001,
+  "sourceCommit": "9587b186567cdb8729efac4345ccc360120562a1",
+  "minimumApi": 23,
+  "targetApi": 23,
+  "zip": "lumen-0.2.0-1000001-native-relink-669e3d24.zip",
+  "bytes": 25368992,
+  "sha256": "7bbd396505dec4594ada6f328cf3d950186b5327b7b6789645a738fe38f246ed",
+  "members": 221,
+  "downloadUrl": "https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.2.0-1000001/lumen-0.2.0-1000001-native-relink-669e3d24.zip",
+  "nativeLibraryBytes": 1226736,
+  "nativeLibrarySha256": "669e3d244f69092dd0a02c9a52e1bfd1af4044f4c383ec49454d61e0d17ef23c",
+  "permissionSha256": "95e2298d623d49414cbcedfe9ef3e6f64aeb2bcabba042d6a52d2783eb05b24a",
+  "recipientGrantIssued": true,
+  "nativeRebuildByteIdentical": true,
+  "modifiedFfmpegRelinkAndUnsignedReplacementPassed": true,
+  "recipientSigningAndInstallationTested": false,
+  "ffmpeg": {
+    "version": "9.0.1",
+    "commit": "bf1b838f2ab88b4f8fd83443325c782ea0e0f7fa",
+    "license": "LGPL-2.1-or-later",
+    "completeUpstreamSourceIncluded": true,
+    "sourcePatchSha256": "69e3f09851bd8f3dae59ee1ba75685696a2a98787005122a60df0471b88130a7"
+  }
+}

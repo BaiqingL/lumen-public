@@ -32,40 +32,35 @@ dd { margin: 0; }
 <main>
 <nav aria-label="Lumen information"><a href="source.html">Source &amp; relinking</a><a href="privacy.html" lang="en">Privacy policy</a><a href="privacy-zh-CN.html" lang="zh-CN">隐私政策</a></nav>
 <h1>Lumen native source &amp; relinking</h1>
-<p>Publisher: <strong>Baiqing Lyu (Lumen)</strong>. Application correspondence updated October 23, 2026. Candidate 12 uses the unchanged candidate 10 native kit below.</p>
-<p>Download the matching native source and relinking materials for Lumen without access to the private application repository or a GitHub account.</p>
-<p lang="zh-CN">此页面提供流明 Lumen 对应版本的原生代码及重新链接材料。下载无需 GitHub 账号，也无需访问应用的私有代码仓库。第三方许可证和声明保留在压缩包内；指定 Lumen 材料适用下方的有限重新链接许可。</p>
-<h2>Version 0.1.0 · build 1000000 · candidate 10</h2>
-<p><a href="https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.1.0-1000000-candidate10/lumen-0.1.0-1000000-candidate10-native-relink-8b2df05f.zip">Download native source and relink kit (ZIP, 6.97 MB)</a></p>
-<p><a href="native-relink-0.1.0-1000000-candidate10.sha256">SHA-256 checksum</a> · <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate10">Versioned source release</a> · <a href="rebuild-0.1.0-1000000-candidate10.md">Rebuild instructions</a></p>
-<dl>
-<dt>Application</dt><dd><code>com.lumen.mediaplayer</code>, version 0.1.0, build 1000000</dd>
-<dt>Minimum system</dt><dd>HarmonyOS 6.1 / API 23</dd>
-<dt>ZIP size</dt><dd>6,972,235 bytes; 66 files</dd>
-<dt>ZIP SHA-256</dt><dd><code>b4e0b3b78a36857aa6778a2d567a6f23680091cc389421d41675f14456678065</code></dd>
-<dt>Native library</dt><dd><code>liblumencapabilities.so</code>, ARM64, 676,776 bytes</dd>
-<dt>Native SHA-256</dt><dd><code>8b2df05f01536b56c637cf50b347524617cbcf530bf56bc540cf0cd481232959</code></dd>
-<dt>Source baseline</dt><dd><code>278294da0b0158a18e446d85691379a9fae89135</code></dd>
-</dl>
+<p>Download the matching native source and relinking materials without access to Lumen's private application repository or a GitHub account.</p>
+<p lang="zh-CN">此页面提供流明 Lumen 对应版本的原生代码及重新链接材料。下载无需 GitHub 账号。第三方许可证保留在压缩包内，指定 Lumen 材料适用下方的有限重新链接许可。</p>
+<h2>Version 0.2.0 · build 1000001</h2>
+<p><a href="https://github.com/BaiqingL/lumen-public/releases/download/native-relink-v0.2.0-1000001/lumen-0.2.0-1000001-native-relink-669e3d24.zip">Download native source and relink kit (ZIP, 25.37 MB)</a></p>
+<p><a href="native-relink-0.2.0-1000001.sha256">SHA-256 checksum</a> · <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.2.0-1000001">Versioned source release</a> · <a href="rebuild-0.2.0-1000001.txt">Rebuild instructions</a></p>
+<dl><dt>Application</dt><dd><code>com.lumen.mediaplayer</code>, 0.2.0 / 1000001</dd>
+<dt>Minimum system</dt><dd>HarmonyOS API 23</dd>
+<dt>ZIP</dt><dd>25,368,992 bytes; 221 files</dd>
+<dt>ZIP SHA-256</dt><dd><code>7bbd396505dec4594ada6f328cf3d950186b5327b7b6789645a738fe38f246ed</code></dd>
+<dt>Native library</dt><dd>ARM64, 1,226,736 bytes</dd>
+<dt>Native SHA-256</dt><dd><code>669e3d244f69092dd0a02c9a52e1bfd1af4044f4c383ec49454d61e0d17ef23c</code></dd>
+<dt>Source baseline</dt><dd><code>9587b186567cdb8729efac4345ccc360120562a1</code></dd></dl>
 <h2>Included materials and verification</h2>
-<p>The kit includes editable LGPL renderer, frame and shader sources, geometry and lifecycle headers, the generator, narrow Lumen integration source, six original application objects, the MIT parser archive and its source references, notices and standalone rebuild scripts. It excludes unrelated application source, media and publisher signing credentials.</p>
-<p>Pristine and repeat rebuilds reproduce the native library above byte for byte. A modified geometry header changes both consumers and links successfully; replacing the native library in a HAP preserves all other archive members and removes the original signing block. The kit records dated distribution notices and their source overlays in its manifest and provenance.</p>
+<p>This update adds local PGS and VobSub subtitle decoding through a minimal FFmpeg 9.0.1 build. The kit includes the complete upstream source archive, exact patch, configuration, build recipe, headers, matching libraries and licenses. It also retains the renderer and parser materials, three editable native units, seven original application objects and the bitmap integration archive needed for relinking.</p>
+<p>Pristine and repeat rebuilds reproduce the native library above byte for byte. A recipient-style modification to FFmpeg's PGS decoder was rebuilt and relinked successfully; unsigned HAP replacement preserves all other package members. The kit contains no unrelated app UI source, media or publisher signing credentials.</p>
 <h2>Permission and licenses</h2>
-<p>Read the <a href="relink-permission-0.1.0-1000000-candidate10.html">Lumen native relinking permission</a> (<a href="relink-permission-0.1.0-1000000-candidate10.md">Markdown</a>). Its existing approved grant covers the listed original materials for rebuilding, relinking, own-use modification and debugging. The full application remains private. Third-party licenses and rights are unchanged.</p>
+<p>Read the <a href="relink-permission-0.2.0-1000001.html">version-specific native relinking permission</a> (<a href="relink-permission-0.2.0-1000001.md">original text</a>). It covers the expressly listed original materials for rebuilding, relinking, own-use modification and debugging. Third-party license rights and historical grants remain unchanged.</p>
 <h2>Rebuild and relink</h2>
-<p>Extract the ZIP and follow <code>README.md</code>. The tested native SDK is Harmony 6.1.1.125 / API 24, OHOS Clang 15.0.4. From the extracted kit:</p>
-<pre><code>python -X utf8 rebuild.py --sdk 'C:/Program Files/Huawei/DevEco Studio/sdk/default/openharmony/native' --verify-inputs</code></pre>
-<p>The build uses the supplied contents and installed SDK. After editing sources, omit <code>--verify-inputs</code> because their original hashes intentionally differ. The helper creates an unsigned HAP; recipient signing and installation require matching personal Huawei credentials and a separate test environment, and have not been tested. The parser archive is reused with the historical provenance limits described in its notices.</p>
+<p>Extract the ZIP and follow <code>README.txt</code>. The standalone native SDK is Harmony 6.1.1.125 / API 24, OHOS Clang 15.0.4:</p>
+<pre><code>python -X utf8 rebuild.py --sdk '&lt;SDK&gt;/openharmony/native' --verify-inputs</code></pre>
+<p>The included FFmpeg source recipe was tested with Ubuntu/WSL and clang 21.1.8. Use <code>--ffmpeg-prefix</code> to relink a recipient-modified FFmpeg build. Recipient signing and installation require separate matching Huawei credentials and have not been tested. The unchanged Rust parser materials retain the provenance limits in their notices.</p>
 <h2>Matching the application package</h2>
-<p>The <a href="release-0.1.0-1000000-candidate12.json">candidate 12 correspondence record</a> and <a href="release-0.1.0-1000000.json">current record</a> associate the exact distribution package with this kit.</p>
-<dl><dt>APP SHA-256</dt><dd><code>566925c56fae75c805fc5bbbd9789b72db05c865607730c9f738dbf548a2be3b</code></dd><dt>HAP SHA-256</dt><dd><code>5edb819cfb28e58d70f47a69475aa50527cc16aef67a9cce593d08de9d6fab8b</code></dd></dl>
-<p>Source-kit validation and package preparation are separate from AppGallery approval. Application binaries are not hosted here.</p>
-<p>The native library is identical in candidates 10, 11 and 12. Candidate 12 restores translucent floating navigation and retains the download eligibility and Chinese-name changes from candidate 11. The existing native source baseline and recipient permission remain applicable.</p>
+<p>The <a href="release-0.2.0-1000001.json">0.2.0 correspondence record</a> binds this kit to the verified distribution APP and HAP. Package preparation does not imply AppGallery acceptance; application binaries are not hosted here.</p>
+<dl><dt>APP SHA-256</dt><dd><code>d871799ee8e572b5413fdcb828ed00250a7c3e2d22668d3978f912b53d07f2d0</code></dd>
+<dt>HAP SHA-256</dt><dd><code>9b4bd1aa5a038402b634ee23d8b316375d46cf6553cfe8e4ee2a22dfd14e49c2</code></dd></dl>
 <h2>Historical materials</h2>
-<p><a href="release-0.1.0-1000000-candidate11.json">Candidate 11 application correspondence</a> is retained.</p>
-<p><a href="release-0.1.0-1000000-candidate10.json">Candidate 10 application correspondence</a> is retained.</p>
-<p>The <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate6">candidate 6 native kit</a>, <a href="release-0.1.0-1000000-candidate9r2.json">candidate 9r2 record</a>, <a href="release-0.1.0-1000000-candidate8.json">candidate 8 record</a> and <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000">earlier native kit</a>, <a href="release-0.1.0-1000000-candidate5.json">candidate 5 package record</a> and <a href="release-0.1.0-1000000-candidate4.json">candidate 4 package record</a> remain available. Use the native-library hash to select the corresponding kit.</p>
-<h2>Contact</h2><p>For matching materials, contact <a href="mailto:admin@lumenapp.tv">admin@lumenapp.tv</a> with the app version, build and native-library hash if available.</p>
+<p>For version 0.1.0 / 1000000, use the <a href="release-0.1.0-1000000-candidate12.json">candidate 12 package record</a> and <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate10">candidate 10 native kit</a>. Its <a href="relink-permission-0.1.0-1000000-candidate10.html">issued permission</a> is retained.</p>
+<p>The <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000-candidate6">candidate 6 kit</a>, <a href="release-0.1.0-1000000-candidate9r2.json">candidate 9r2 record</a>, and <a href="https://github.com/BaiqingL/lumen-public/releases/tag/native-relink-v0.1.0-1000000">earlier kit</a> remain available. Match the native-library hash to your application.</p>
+<h2>Contact</h2><p>Contact <a href="mailto:admin@lumenapp.tv">admin@lumenapp.tv</a> with the app version, build and native-library hash.</p>
 </main>
 </body>
 </html>

@@ -1,0 +1,41 @@
+Lumen 0.2.0 / 1000001 native relink kit
+
+Prepared locally for liuming-0.2.0-1000001-tested-development-r2.hap; SHA-256 31771f6b4e11e348dc03277c6d5264bddd61ea83330bf4d5a0db7c29fa70b1f0.
+Native library SHA-256 669e3d244f69092dd0a02c9a52e1bfd1af4044f4c383ec49454d61e0d17ef23c. The version-specific original-material
+permission is in relink-permission.md. Historical issued kits remain separate.
+This package is prepared locally; publication is a separate release action.
+
+Contents: seven original application objects, the original bitmap integration
+archive, three editable renderer/session units with their existing notices,
+the pinned libdovi parser materials, complete FFmpeg9.0.1 upstream source,
+exact integration patch/configuration/build recipe, and matching FFmpeg archives.
+No app ArkTS/UI source, signing material, credentials or media are included.
+
+Ordinary rebuild (Python3, Harmony SDK6.1.1.125/API24, OHOS Clang15.0.4):
+  python rebuild.py --sdk "<SDK>/openharmony/native" --verify-inputs
+Output: build/liblumencapabilities.so and the unstripped library.
+Run without --verify-inputs after intentionally changing editable material.
+
+To change FFmpeg, see dependencies/ffmpeg/README.txt. Its included build.sh was
+tested in Ubuntu/WSL with clang21.1.8, make, zlib development headers and the
+Harmony native SDK sysroot. Place upstream/ffmpeg-9.0.1.tar.gz in a separate
+cache and run recipe/build.sh ohos CACHE INSTALL SDK. That extracts the pinned
+source and applies the included patch. Modify that extracted source, then rerun
+the recipe with a fresh install prefix. The exact compiler identity/options
+are retained under dependencies/ffmpeg/build/. No fetch is needed when the
+included upstream archive is placed in the cache.
+
+Relink a replacement prefix without replacing this kit's original archives:
+  python rebuild.py --sdk "<SDK>/openharmony/native" --ffmpeg-prefix "<replacement-prefix>" --output build-modified
+
+Replace only the native member of a matching HAP, producing an unsigned copy:
+  python replace-native.py --input-hap "<matching.hap>" --library build-modified/liblumencapabilities.so --output "<new-unsigned.hap>"
+The original package is never overwritten. Recipients need their own matching
+Huawei signing certificate/profile and a separate test environment. No claim
+is made that recipient signing/installation has been tested.
+
+manifest.json identifies exact included bytes. provenance.json identifies the
+native snapshot. Validation receipts are prepared alongside this local kit.
+Third-party license rights are unchanged. The new permission expressly covers
+this kit's seven original objects and bitmap integration archive. It grants no
+general license to unrelated private application source, branding or artwork.
